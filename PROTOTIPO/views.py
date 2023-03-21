@@ -11,4 +11,4 @@ def sistema(request):
 
 def camara(request):
     cls: joblib.load('app.py')
-    return render(request,"Sistema.html",{})
+    return render(request,"Sistema.html",{'cls':cls})
